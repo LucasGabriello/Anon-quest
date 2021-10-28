@@ -65,5 +65,30 @@ button, .button{
     background: var(--blue);
     color: var(--white);
 
+    transition: filter .2s;
+
     cursor: pointer;
+}
+button:hover, .button:hover{
+    filter: brightness(1.2);
+}
+
+button > img
+.button > img{
+    margin-right: 1rem ;
+    width: 2rem;
+}
+button.outlined,
+.button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+.content header{
+    width: 80%;
+
+}
+.content header img{
+    width: 16.7rem;
 }
