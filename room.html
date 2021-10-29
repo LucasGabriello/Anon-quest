@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/room.css">
+        <link rel="stylesheet" href="styles/modal.css">
         <!--fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,11 +48,10 @@
                 <section id="questions">
                     <h2 class="sr-only">Perguntas da comunidade</h2>
                     <div class="questions">
-
                         <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user"> 
-                                    <img src="/assets/avatar.png" alt="avatar"/>
+                                    <img src="/assets/user.png" alt="avatar"/>
                                 </div>
                                 <div class="question">
                                     <p>Qual a diferença entre const, var e let no Javascript?</p>
@@ -66,11 +66,65 @@
                                     <img src="/assets/trash.png" alt="Excluir mensagem"/>
                                     Excluir
                                 </a>
-
                             </div>
-                        </div> 
+                        </div>
+
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user"> 
+                                    <img src="/assets/user.png" alt="avatar"/>
+                                </div>
+                                <div class="question">
+                                    <p>Oque é Javascript?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="check">
+                                    <img src="/assets/check.png" alt="marcar como lida"/>
+                                    Marcar como lida
+                                </a>
+                                <a href="#" class="trash">
+                                    <img src="/assets/trash.png" alt="Excluir mensagem"/>
+                                    Excluir
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="question-wrapper read">
+                            <div class="question-content">
+                                <div class="user"> 
+                                    <img src="/assets/user.png" alt="avatar"/>
+                                </div>
+                                <div class="question">
+                                    <p>Qual a diferença entre const, var e let no Javascript?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="check">
+                                    <img src="/assets/check.png" alt="Pergunta lida"/>
+                                    Pergunta lida
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
+
+                <!--Modal-->
+                <div class="modal-wrapper">
+                    <div class="modal">
+                        <h2>Excluir Pergunta</h2>
+                        <p>tem certeza que você deseja excluir essa pergunta?</p>
+                        <form action="#">
+                            <label class="sr-only" for-id="password">Digite a senha de Admin</label>
+                            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                        </form>
+                        <div class="buttons">
+                            <div class="button grey">Cancelar</div>
+                            <button class="red">Sim, excluir</button>
+                        </div>
+                    </div>
+                </div>
+
             </main>
         </div>
     </body>

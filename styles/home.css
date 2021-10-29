@@ -1,7 +1,7 @@
 .content{
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 11.4rem ifr;
+    grid-template-rows: 11.4rem 1fr;
     grid-template-areas: 'header header' 'left right';
     
 }

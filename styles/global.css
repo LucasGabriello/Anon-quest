@@ -17,7 +17,7 @@ html{
 
     --gre-dark: #4D5E77;
     --gre-blue: #A1B2CD;
-    --gre-medium: #D3D9E2;
+    --gre-medium: #eaecf2;
     --gre-light: #E5EAF1;
 
     /*1 rem = 16 pixels(User Agent)(User Agent) == 100%*/
@@ -30,7 +30,7 @@ body{
     background:var(--background);
 }
 body, button, input, textarea{
-    font-size: camp(14px, 1.6rem, 2vw); /*intervalo de tamanho(minimo, padrão, maximo)*/
+    font-size: clamp(14px, 1.6rem, 2vw); /*intervalo de tamanho(minimo, padrão, maximo)*/
     font-family: 'Open Sans', sans-serif;
     /*font-family: 'Poppins', sans-serif;*/
 }
@@ -56,7 +56,7 @@ input, button, .button{
     height: 5rem;
 }
 button, .button{
-    font-family: 'Popins';
+    font-family: 'Poppins';
     font-weight: 500;
     line-height: 0;
     display: flex;
@@ -76,10 +76,8 @@ button:hover, .button:hover{
 button img{
        margin-right: 1rem ;
 }
-a img{
-    margin-right: 1rem ;
-}
-button > img
+
+button > img,
 .button > img{
     margin-right: 1rem ;
     width: 2rem;
@@ -91,10 +89,23 @@ button.outlined,
     border: .2rem solid var(--blue);
 }
 
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+button.grey,
+.button.grey{
+    background: var(--gre-light);
+    color: var(--gre-dark);
+}
+
+
+/*--------------HEADER-------------*/
 .content header{
     width: 80%;
     margin: 3.5rem auto;
 }
 .content header img{
-    width: 16.7rem;
+    width: 30.7rem;
 }
