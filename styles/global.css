@@ -25,6 +25,7 @@ html{
 }
 
 body{
+    display: flex;
     height: 100vh;
     background:var(--background);
 }
@@ -72,7 +73,12 @@ button, .button{
 button:hover, .button:hover{
     filter: brightness(1.2);
 }
-
+button img{
+       margin-right: 1rem ;
+}
+a img{
+    margin-right: 1rem ;
+}
 button > img
 .button > img{
     margin-right: 1rem ;
@@ -87,7 +93,7 @@ button.outlined,
 
 .content header{
     width: 80%;
-
+    margin: 3.5rem auto;
 }
 .content header img{
     width: 16.7rem;
