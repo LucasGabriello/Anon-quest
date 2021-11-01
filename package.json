@@ -1,0 +1,27 @@
+{
+  "name": "origin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasGabriello/Anon-quest.git"
+  },
+  "keywords": [],
+  "author": "Lucas Gabriel",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "bugs": {
+    "url": "https://github.com/LucasGabriello/Anon-quest/issues"
+  },
+  "homepage": "https://github.com/LucasGabriello/Anon-quest#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
