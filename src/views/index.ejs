@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
 
-        <link rel="stylesheet" href="styles/global.css">
-        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="/styles/global.css">
+        <link rel="stylesheet" href="/styles/home.css">
         <!--fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,9 @@
     <body>
         <div id="home" class="content">
             <header>
-                <img src="images/Logo.png" alt="rocketQ logo"/>
+                <a href="/">
+                    <img src="/images/Logo.png" alt="rocketQ logo"/>
+                </a>
             </header>
             <div id="bg">
                 <div class="ball top"></div>
@@ -22,32 +24,12 @@
             </div>
             <main>
                 <div class="container">
-                    <section>
-                        <h2>Entre como participante</h2>
-                        <form action="">
-                            <label class="sr-only" for="room-id">Código da sala</label>
-                            <input type="number" id="room-id" placeholder="Código da sala">
-                            <button>
-                                <img src="images/enter-room.png" alt="entrar na sala"/>
-                                Entrar na sala
-                            </button>
-                        </form>
-                    </section>
-                    <div class="separator">
-                        <div></div>
-                        <div>ou</div>
-                        <div></div>
-                    </div>
-                    <section>
-                        <h2>Crie sua própria sala de forma fácil</h2>
-                        <a href="create-room.html" class="button outlined">
-                            <img src="images/users.png" alt="criar sala"> Criar Sala
-                        </a>
-                    </section>
+                    <!-- Render conteudo -->
+
+                    <%- include(`parts/${page}`) %>
+
                 </div>
             </main>
         </div>
-        
-
     </body>
 </html>
