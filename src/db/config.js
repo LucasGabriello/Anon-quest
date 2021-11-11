@@ -1,8 +1,8 @@
 const sqlite3 = require("sqlite3");
 const { open } = require("sqlite")
 
-module.exports = () => 
+module.exports = () =>
     open({
-        filename: '/src/db/anonquest.sqlite',
+        filename: './src/db/anonquest.sqlite',
         driver: sqlite3.Database,
     });
