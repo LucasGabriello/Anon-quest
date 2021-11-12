@@ -11,11 +11,11 @@ const initDb = {
         )`);
 
         await db.exec(`
-        CREATE TABLE question(
+        CREATE TABLE questions(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            titulo TEXT, 
+            title TEXT, 
             read INT,
-            sala INT
+            room INT
         )`);
         
         await db.close()
