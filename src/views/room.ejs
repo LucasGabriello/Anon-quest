@@ -71,28 +71,37 @@
                                 </a>
                             </div>
                         </div>
+                        
+                        <% questions.forEach(question =>{%>
 
-                        <div class="question-wrapper">
-                            <div class="question-content">
-                                <div class="user"> 
-                                    <img src="/images/user.png" alt="avatar"/>
+                            <div class="question-wrapper">
+                                <div class="question-content">
+                                    <div class="user"> 
+                                        <img src="/images/user.png" alt="avatar"/>
+                                    </div>
+                                    <div class="question">
+                                        <p><%= question.title %></p>
+                                    </div>
                                 </div>
-                                <div class="question">
-                                    <p>Oque é Javascript?</p>
+                                <div class="actions">
+                                    <a href="#" class="check" data-id="3">
+                                        <img src="/images/check.png" alt="marcar como lida"/>
+                                        Marcar como lida
+                                    </a>
+                                    <a href="#" class="delete" data-id="3">
+                                        <img src="/images/trash.png" alt="Excluir mensagem"/>
+                                        Excluir
+                                    </a>
                                 </div>
                             </div>
-                            <div class="actions">
-                                <a href="#" class="check" data-id="3">
-                                    <img src="/images/check.png" alt="marcar como lida"/>
-                                    Marcar como lida
-                                </a>
-                                <a href="#" class="delete" data-id="3">
-                                    <img src="/images/trash.png" alt="Excluir mensagem"/>
-                                    Excluir
-                                </a>
-                            </div>
-                        </div>
 
+                        <%});%>
+                        <% questionsRead.forEach(question =>{
+
+
+
+
+                        }) %>
                         <div class="question-wrapper read">
                             <div class="question-content">
                                 <div class="user"> 
