@@ -7,10 +7,12 @@
     "start": "nodemon .",
     "init-db":"node src/db/init.js"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LucasGabriello/Anon-quest.git"
   },
+  
   "keywords": [],
   "author": "Lucas Gabriel",
   "license": "ISC",
@@ -20,9 +22,11 @@
     "sqlite": "^4.0.23",
     "sqlite3": "^5.0.2"
   },
+  
   "bugs": {
     "url": "https://github.com/LucasGabriello/Anon-quest/issues"
   },
+  
   "homepage": "https://github.com/LucasGabriello/Anon-quest#readme",
   "devDependencies": {
     "nodemon": "^2.0.14"
